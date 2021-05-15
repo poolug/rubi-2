@@ -1,22 +1,14 @@
-valor_1 = ARGV[0].to_i
-valor_2 = ARGV[1].to_i
-valor_3 = ARGV[2].to_i
-valor_4 = ARGV[3].to_i
+n1 = ARGV[0].to_i
+n2 = ARGV[1].to_i
+n3 = ARGV[2].to_i
+n4 = ARGV[3].to_i
 
-if valor_1 <= valor_2 && valor_1 <= valor_3
-    valor_4 = valor_1
-elsif  valor_2 < valor_3 
-    valor_4 = valor_2
+if n1 > n2 && n1 > n3 && n1 > n4
+    puts n1
+elsif n2 > n3 && n2 > n4
+    puts n2
+elsif n3 > n4
+    puts n3
 else
-    valor_4 = valor_3
-end
-
-if valor_1 > valor_2 && valor_1 > valor_3 && valor_1 > valor_4
-    puts valor_1
-elsif valor_2 > valor_3 && valor_2 > valor_4
-    puts valor_2
-elsif valor_3 > valor_4
-    puts valor_3
-else
-    puts valor_4
+    puts n4
 end
